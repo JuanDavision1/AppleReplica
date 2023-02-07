@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'apple';
+    src: url(./../../../assets/fonts/PTSans-Regular.ttf) format(truetype) ;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#menu-conteiner{
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+    height: 60px;
+
+}
+#menu-conteiner img{
+    width: 32px ;
+    margin-right: 18px;
+}
+#menu-conteiner ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+cursor: pointer;
+  
+}
+#menu-conteiner  #options-main{
+    width: 76%;
+    justify-content:flex-end;
+
+}
+#menu-conteiner  #options-main li{
+    margin-left: 30px;
+    
+}
+#menu-conteiner  #options-auth{
+    width: 14%;
+    display: flex;
+    justify-content: flex-end;
+}
+#menu-conteiner ul li{
+
+font-size: 12px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 10px;
+  color:#bcb9b9
+}
+#menu-conteiner  #options-auth li{
+  margin-left: 8px;
+}
