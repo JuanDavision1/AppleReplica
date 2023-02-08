@@ -1,8 +1,73 @@
 <hr>
-<div id="main">
-    <div id="box1"></div>
-    <div id="box2"></div>
-    <div id="box3"></div>
-    <div id="box4"></div>
+<footer>
+    <div id="main">
+    <div id="box1">
+        
+        <ul>
+            <h5>Descubrir</h5>
+            <li  *ngFor="let item of menu"
+            [routerLink]="item.ruta">{{item.texto}}</li>
+        </ul>
+       
+        <ul>
+            <h5>Apple Wallet</h5>
+            <li> Apple Pay</li>
+        </ul>
+    </div>
+    <div id="box2"> 
+      
+        <ul>
+            <h5>Cuenta</h5>
+            <li>Administrar tu Apple ID</li>
+            <li>iCloud.com</li>
+        </ul>
+       
+        <ul>
+            <div class="spacial">
+            <h5>Entretenimiento</h5>
+            <li><a *ngFor="let item of Entretenimiento" [href]="item.ruta">{{item.texto}}</a></li>
+         </div>
+        </ul>
+      
+    </div>
+    <div id="box3">
+       
+        <ul>
+            <h5>Para la empresa</h5>
+            <li>Apple y la empresa </li>
+        </ul>
+     
+        <ul>
+            <h5>Para la educación</h5>
+            <li>Apple y la Educacion</li>
+            <li>Comprar para la educación basica y media</li>
+        </ul>
+    </div>
+    <div id="box4">
+     
+        <ul>
+            <h5>Valores de Apple</h5>
+            <li> Accesibilidad</li>
+            <li> Educacion</li>
+            <li> Medio Ambiente</li>
+        </ul>
+     
+        <ul>
+            <div class="spacial">
+            <h5>Acerca de Apple</h5>
+            <li><a *ngFor="let item of Acercade" [href]="item.ruta"> {{item.texto}}</a></li>
+        </div>
+        </ul>
+    </div>
+
 
 </div>
+<hr>
+<div id="last">
+    <p>Copyright © 2023 Apple Inc. Todos los derechos reservados. </p>
+    <p>Política de privacidad</p>
+    <p>| Aviso legal</p>
+    <p>| Mapa del sitio</p>
+</div>
+
+</footer>
