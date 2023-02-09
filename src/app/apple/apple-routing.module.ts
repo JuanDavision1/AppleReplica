@@ -9,11 +9,13 @@ import { SoporteComponent } from './pages/soporte/soporte.component';
 import { TvyCasaComponent } from './pages/tvy-casa/tvy-casa.component';
 import { WatchComponent } from './pages/watch/watch.component';
 import { SoloenappleComponent } from './pages/soloenapple/soloenapple.component';
+import { MainComponent } from './pages/main/main.component';
 
 const routes: Routes = [
   {
     path:'',
     children:[
+      {path:'', component:MainComponent},
       {path:'airpods', component:AirpodsComponent},
       {path:'donde-comprar', component:DondeComprarComponent},
       {path:'ipad', component:IpadComponent},
@@ -23,7 +25,7 @@ const routes: Routes = [
       {path:'soporte', component:SoporteComponent},
       {path:'tvycasa', component:TvyCasaComponent},
       {path:'watch', component:WatchComponent},
-      {path:'**', redirectTo:'airpods'}
+      {path:'**', redirectTo:''}
     ]
   }
 ];

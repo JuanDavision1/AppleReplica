@@ -1,9 +1,12 @@
-<div id="menu-conteiner">
-<ul id="options-main">
-    <li routerLink="./co/mac"><img src="../../../assets/img/Apple_logo_grey.png"></li>
-    <li *ngFor="let item of menu" [routerLink]="[item.ruta]">{{item.texto}} </li>
-</ul>
-<ul id="options-auth"> 
-    <li *ngFor="let options of registromenu" [routerLink]="[options.ruta]">{{options.texto}}</li> 
-</ul>
-</div>
+<header>
+    <div id="menu-conteiner">
+        <ul id="options-main">
+            <li routerLink="./co/main"><img src="../../../assets/img/Apple_logo_grey.png"></li>
+            <li *ngFor="let item of menu" [routerLink]="[item.ruta]">{{item.texto}} </li>
+        </ul>
+        <ul id="options-auth"> 
+            <li *ngFor="let options of registromenu" [routerLink]="[options.ruta]">{{options.texto}}</li> 
+        </ul>
+        </div>
+</header>
+
