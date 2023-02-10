@@ -1,5 +1,6 @@
 .box1,
-.box2{
+.box2,
+.box3{
     
     width: 100%;
     height: 100vh;
@@ -10,7 +11,9 @@
     overflow: hidden;
  background-color: #FBFBFD;
 }
-.box2{
+.box2,
+.box3
+{
     background-color: #000000;
 }
 a{
@@ -24,26 +27,41 @@ img{
     margin-top: 100px;
     padding-top: 10%;
 }
+#watch{
+    width: 800px;
+    height: 340px;
+    padding-top: 200px;
+}
 .box1 .info,
-.box2 .layer2{
+.box2 .layer2,
+.box3 .layer3{
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-    
     align-items: center;
    
 }
 .box1 .info #info,
-.box2 .layer2 #layer2{
+.box2 .layer2 #layer2,
+.box3 .layer3 #layer3{
     position: absolute;
     z-index:3;
+    margin: 0 auto;
     margin-top: -340px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
 }
 h1{
     margin: 0 auto;
     font-size: 54px;
    font-weight: 500;
+}
+.titlesb{
+    font-size: 40px;
+    font-weight: 500;
+    color: #FBFBFD;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 p{
@@ -58,17 +76,83 @@ a{
 }
 
 hr{
-    height:20px;
+    height:10px;
     background-color: #FBFBFD;
 }
 .newfont{
-    color: #FBFBFD;
-   
+    color: #FBFBFD;  
 }
-#texto{
-    margin-left: 80px;
+.textowatch{
+    font-size: 44px;
+    color: #FBFBFD;  
+    margin-left: 130px;
 }
-#enlace{
+#textowatch{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color:rgb(179, 29, 29);
+    margin-left: 190px;
+}
+#texto,
+.enlace,
+#textowatch-sub{
     margin-left: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+}
+
+#vermas{
+margin-left:160px;
+
+}
+
+#textowatch-sub,
+.sub-text{
+    font-size: 27px;
+    color: #FBFBFD;  
+
+}
+.sub-text{
+    font-size: 19px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+#apple-icon{
+width: 44px;
+height: 44px;
+margin-left: 5px;
+
+}
+.box4{
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    background-color: #FBFBFD;
+    margin-bottom: 80px;
+}
+.box4 .sub_box1,
+.box4 .sub_box2{
+    width: 48%;
+    height: 800px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    border: 12px solid white;
+    background-color: #000000;
+}
+.box4 .sub_box1 #info,
+.box4 .sub_box2 #info2
+{
+padding-top:97px;
+}
+.img{
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 604px
 }
