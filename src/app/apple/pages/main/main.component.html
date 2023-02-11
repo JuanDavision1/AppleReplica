@@ -38,22 +38,16 @@
  
 </div>
 <hr>
+ <!--*ngIf="index == 2" -->
 <div class="box4">
-  <div class="sub_box1">
-    <div id="info">
-      <h1 class="titlesb" >MacBook Pro</h1>
-      <p class="sub-text">Con los superpoderes de los chips<br> M2 Pro y M2 Max. </p>
-      <a  class="link"href="https://www.apple.com/co/iphone-14-pro/">Más informacion ></a>
+  <div id="sub_box1"  *ngFor="let item of cajas;let indice= index;" [ngClass]="{FondoBlanco:indice+2 }" >
+    <div id="info" >
+      <h1 class="titlesb" >{{item.titulo}}</h1>
+      <p class="sub-text">{{item.parrafo}}</p>
+      <a  class="link"[href]=item.ruta>{{item.masinfor}}</a>
     </div>
-       <a  class ="img"href="https://www.apple.com/co/iphone-14-pro/"><img src="../../../../assets/img/cumpuss.jpg" alt=""></a> -->
+       <a  class ="img" [href]=item.ruta><img id="imgbox" [src]="item.img" alt=""></a> 
   </div>
-  <div class="sub_box2">
-    <div id="info2">
-      <h1 class="titlesb" >Mac mini </h1>
-      <p class="sub-text" >Con los superpoderes de los chips <br>M2 y m2 Pro. </p>
-      <a    class="link"href="https://www.apple.com/co/iphone-14-pro/">Más informacion ></a>
-    </div>
-       <a   class ="img" href="https://www.apple.com/co/iphone-14-pro/"><img src="../../../../assets/img/macmini.jpg" alt=""></a> -->
-  </div>
+  
 </div>
 <hr>
