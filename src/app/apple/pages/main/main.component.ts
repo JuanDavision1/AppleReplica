@@ -17,13 +17,15 @@ ngOnInit(): void {
   
 }
 
-// cambio(){
-//   for (let index = 0; index < this.cajas.length; index++) {
-//     if(this.cajas[index].titulo ='iPad'){
-//       this.renderrer2.setStyle(this.fondo.nativeElement,'background-color','red')
-//     console.log('hhh')
-//   }
-//   }
+cambio(indice:number){
+ if(this.cajas[indice].id ==2 || this.cajas[indice].id ==3){
+  return 'fondoblanco'
+}
+if(this.cajas[indice].id ==5){
+return 'tamaño';
+}
+return 'hola'
+   }
 
 }
   

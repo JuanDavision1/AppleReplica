@@ -28,6 +28,7 @@ img{
     width: 100%;
     height: 400px;
     z-index:1;
+    margin-top: 100px;
     padding-top: 10%;
 }
 #watch{
@@ -140,7 +141,7 @@ margin-left: 5px;
 }
 .box4 #sub_box1{
     width: 48%;
-    height: 670px;
+    height: 770px;
     display: flex;
     flex-flow: wrap column;
     align-items: center;
@@ -162,7 +163,10 @@ padding-top:97px;
     height: 396px;
 }
 
-.box4 .FondoBlanco{
-    background-color: #2727b7;
-    
+.box4 .fondoblanco{
+    color: black;
+    background-color: #FBFBFD  !important;
     }
+.tamaño{
+    filter: blur(5px);
+}
